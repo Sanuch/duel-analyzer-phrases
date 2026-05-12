@@ -1,0 +1,13 @@
+scripts/
+__pycache__/
+*.py
+
+catalog.json
+
+.DS_Store
+*.log
+
+.vscode/
+.idea/
+*.swp
+*.swo

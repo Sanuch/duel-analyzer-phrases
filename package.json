@@ -1,0 +1,21 @@
+{
+  "name": "duel-analyzer-phrases",
+  "version": "1.0.0",
+  "description": "Phrase catalog for the Duel Analyzer browser extension",
+  "main": "manifest.json",
+  "scripts": {
+    "generate": "python scripts/generate_phrases.py"
+  },
+  "keywords": [
+    "godville",
+    "duel",
+    "analyzer",
+    "phrases"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_ORG/duel-analyzer-phrases"
+  }
+}

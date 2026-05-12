@@ -1,0 +1,154 @@
+name: Validate Phrases
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Validate manifest JSON structure
+        run: |
+          python -c "
+          import json
+          import sys
+          try:
+            with open('manifest.json') as f:
+              manifest = json.load(f)
+            # Validate top-level structure
+            assert 'schemaVersion' in manifest, 'Missing schemaVersion'
+            assert 'updatedAt' in manifest, 'Missing updatedAt'
+            assert 'files' in manifest, 'Missing files array'
+            assert isinstance(manifest['files'], list), 'files must be array'
+            print('✓ Manifest structure valid')
+          except Exception as e:
+            print(f'✗ Manifest validation failed: {e}')
+            sys.exit(1)
+          "
+
+      - name: Check all resource files exist
+        run: |
+          python -c "
+          import json
+          import sys
+          from pathlib import Path
+          try:
+            with open('manifest.json') as f:
+              manifest = json.load(f)
+            missing = []
+            for entry in manifest['files']:
+              resource_path = entry['url'].replace('./', '')
+              if not Path(resource_path).exists():
+                missing.append(resource_path)
+            if missing:
+              print(f'✗ Missing resource files: {missing}')
+              sys.exit(1)
+            print(f'✓ All {len(manifest[\"files\"])} resource files exist')
+          except Exception as e:
+            print(f'✗ Resource check failed: {e}')
+            sys.exit(1)
+          "
+
+      - name: Validate resource file schemas
+        run: |
+          python -c "
+          import json
+          import sys
+          from pathlib import Path
+          try:
+            with open('manifest.json') as f:
+              manifest = json.load(f)
+            for entry in manifest['files']:
+              resource_path = entry['url'].replace('./', '')
+              with open(resource_path) as f:
+                resource = json.load(f)
+              # Validate resource structure
+              assert 'schemaVersion' in resource, f'{resource_path}: Missing schemaVersion'
+              assert 'dataVersion' in resource, f'{resource_path}: Missing dataVersion'
+              assert 'checksum' in resource, f'{resource_path}: Missing checksum'
+              assert 'meta' in resource, f'{resource_path}: Missing meta'
+              assert 'data' in resource, f'{resource_path}: Missing data'
+              assert 'patterns' in resource['data'], f'{resource_path}: Missing patterns in data'
+              assert isinstance(resource['data']['patterns'], list), f'{resource_path}: patterns must be array'
+            print(f'✓ All resource files have valid schema')
+          except Exception as e:
+            print(f'✗ Resource schema validation failed: {e}')
+            sys.exit(1)
+          "
+
+      - name: Verify checksums match
+        run: |
+          python -c "
+          import json
+          import hashlib
+          import sys
+          from pathlib import Path
+          try:
+            with open('manifest.json') as f:
+              manifest = json.load(f)
+            for entry in manifest['files']:
+              resource_path = entry['url'].replace('./', '')
+              # Read resource file and compute checksum of data payload
+              with open(resource_path) as f:
+                resource = json.load(f)
+              # Compute checksum same way as generate_phrases.py does:
+              # hash of JSON dumps with ensure_ascii=False and compact separators
+              data_json = json.dumps({'patterns': resource['data']['patterns']}, ensure_ascii=False, separators=(',', ':'))
+              computed = hashlib.sha256(data_json.encode('utf-8')).hexdigest()
+              expected = entry['checksum'].replace('sha256:', '')
+              if computed != expected:
+                print(f'✗ Checksum mismatch for {resource_path}')
+                print(f'  Expected: sha256:{expected}')
+                print(f'  Computed: sha256:{computed}')
+                sys.exit(1)
+            print('✓ All checksums verified')
+          except Exception as e:
+            print(f'✗ Checksum verification failed: {e}')
+            sys.exit(1)
+          "
+
+      - name: Validate catalog.json format
+        run: |
+          python -c "
+          import json
+          import sys
+          try:
+            with open('catalog.json') as f:
+              catalog = json.load(f)
+            assert 'entries' in catalog, 'Missing entries in catalog'
+            assert isinstance(catalog['entries'], list), 'entries must be array'
+            if len(catalog['entries']) > 0:
+              entry = catalog['entries'][0]
+              required_keys = ['sourceFile', 'className', 'methodName', 'phrases']
+              for key in required_keys:
+                assert key in entry, f'Entry missing {key}'
+            print(f'✓ Catalog valid with {len(catalog[\"entries\"])} entries')
+          except Exception as e:
+            print(f'✗ Catalog validation failed: {e}')
+            sys.exit(1)
+          "
+
+      - name: Summary
+        if: success()
+        run: |
+          echo "✅ All phrase validations passed"
+          echo ""
+          echo "Validated:"
+          echo "  • manifest.json structure"
+          echo "  • All resource files exist"
+          echo "  • Resource file schemas"
+          echo "  • SHA-256 checksums"
+          echo "  • catalog.json format"
