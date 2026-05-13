@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "2.0",
+  "updatedAt": "2026-05-13T20:36:21.547717+00:00",
+  "files": [
+    {
+      "lang": "ru",
+      "type": "voice",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:4d1a07ab137b5f44aec8845c7fbeeb246db877dd37cf3f78f39e5620497c3ea7",
+      "url": "./resources/voice.json"
+    },
+    {
+      "lang": "ru",
+      "type": "influence",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:7c474b762aad2c2a426ca982c414cab95f0ee6b5ba042a36049889196d156e31",
+      "url": "./resources/influence.json"
+    },
+    {
+      "lang": "ru",
+      "type": "miracle",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:d403bf7f717fe758bfb0a1ffbc30af326c1fc69d20e834c5aec7cb10bf38ef7e",
+      "url": "./resources/miracle.json"
+    },
+    {
+      "lang": "ru",
+      "type": "conditions",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:7be53b31c43787bfc84f262cfefcb8367d2bf4d8a6f7c33d59af45abbd0fba55",
+      "url": "./resources/conditions.json"
+    }
+  ]
+}

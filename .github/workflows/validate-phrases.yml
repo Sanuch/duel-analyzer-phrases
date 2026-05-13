@@ -33,6 +33,12 @@ jobs:
             assert 'updatedAt' in manifest, 'Missing updatedAt'
             assert 'files' in manifest, 'Missing files array'
             assert isinstance(manifest['files'], list), 'files must be array'
+            assert manifest['schemaVersion'] == '1.0', 'manifest.json must remain v1'
+
+            with open('manifest.v2.json') as f:
+              manifest_v2 = json.load(f)
+            assert manifest_v2.get('schemaVersion') == '2.0', 'manifest.v2.json must be v2'
+            assert isinstance(manifest_v2.get('files'), list), 'manifest.v2.json files must be array'
             print('✓ Manifest structure valid')
           except Exception as e:
             print(f'✗ Manifest validation failed: {e}')
@@ -46,17 +52,21 @@ jobs:
           import sys
           from pathlib import Path
           try:
-            with open('manifest.json') as f:
-              manifest = json.load(f)
+            manifests = ['manifest.json', 'manifest.v2.json']
             missing = []
-            for entry in manifest['files']:
-              resource_path = entry['url'].replace('./', '')
-              if not Path(resource_path).exists():
-                missing.append(resource_path)
+            total = 0
+            for manifest_path in manifests:
+              with open(manifest_path) as f:
+                manifest = json.load(f)
+              for entry in manifest['files']:
+                total += 1
+                resource_path = entry['url'].replace('./', '')
+                if not Path(resource_path).exists():
+                  missing.append(resource_path)
             if missing:
               print(f'✗ Missing resource files: {missing}')
               sys.exit(1)
-            print(f'✓ All {len(manifest[\"files\"])} resource files exist')
+            print(f'✓ All {total} resource files exist')
           except Exception as e:
             print(f'✗ Resource check failed: {e}')
             sys.exit(1)
@@ -70,35 +80,42 @@ jobs:
           PATTERN_TYPES = {'voice', 'influence', 'miracle', 'conditions'}
           from pathlib import Path
           try:
-            with open('manifest.json') as f:
-              manifest = json.load(f)
-            for entry in manifest['files']:
-              resource_path = entry['url'].replace('./', '')
-              with open(resource_path) as f:
-                resource = json.load(f)
-              resource_type = entry.get('type')
-              # Validate resource structure
-              assert 'schemaVersion' in resource, f'{resource_path}: Missing schemaVersion'
-              assert 'dataVersion' in resource, f'{resource_path}: Missing dataVersion'
-              assert 'checksum' in resource, f'{resource_path}: Missing checksum'
-              assert 'meta' in resource, f'{resource_path}: Missing meta'
-              assert 'data' in resource, f'{resource_path}: Missing data'
+            for manifest_path in ['manifest.json', 'manifest.v2.json']:
+              with open(manifest_path) as f:
+                manifest = json.load(f)
+              manifest_schema = manifest.get('schemaVersion')
+              for entry in manifest['files']:
+                resource_path = entry['url'].replace('./', '')
+                with open(resource_path) as f:
+                  resource = json.load(f)
+                resource_type = entry.get('type')
+                # Validate resource structure
+                assert 'schemaVersion' in resource, f'{resource_path}: Missing schemaVersion'
+                assert 'dataVersion' in resource, f'{resource_path}: Missing dataVersion'
+                assert 'checksum' in resource, f'{resource_path}: Missing checksum'
+                assert 'meta' in resource, f'{resource_path}: Missing meta'
+                assert 'data' in resource, f'{resource_path}: Missing data'
 
-              if resource_type in PATTERN_TYPES:
-                assert 'patterns' in resource['data'], f'{resource_path}: Missing patterns in data'
-                assert isinstance(resource['data']['patterns'], list), f'{resource_path}: patterns must be array'
-              elif resource_type == 'voice-result-groups':
-                assert 'resultOrder' in resource['data'], f'{resource_path}: Missing resultOrder in data'
-                assert 'groups' in resource['data'], f'{resource_path}: Missing groups in data'
-                assert isinstance(resource['data']['resultOrder'], list), f'{resource_path}: resultOrder must be array'
-                assert isinstance(resource['data']['groups'], dict), f'{resource_path}: groups must be object'
-              elif resource_type == 'selectors':
-                assert 'stepContainer' in resource['data'], f'{resource_path}: Missing stepContainer in data'
-                assert 'stepItem' in resource['data'], f'{resource_path}: Missing stepItem in data'
-              elif resource_type == 'thresholds':
-                assert isinstance(resource['data'], dict), f'{resource_path}: thresholds data must be object'
-              else:
-                raise AssertionError(f'{resource_path}: Unsupported resource type {resource_type}')
+                if resource_type in PATTERN_TYPES:
+                  assert 'patterns' in resource['data'], f'{resource_path}: Missing patterns in data'
+                  assert isinstance(resource['data']['patterns'], list), f'{resource_path}: patterns must be array'
+                  if manifest_schema == '2.0' and resource['data']['patterns']:
+                    first = resource['data']['patterns'][0]
+                    assert isinstance(first, dict), f'{resource_path}: v2 patterns must be objects'
+                    assert 'pattern' in first and 'result' in first, f'{resource_path}: v2 pattern object must contain pattern/result'
+                elif resource_type == 'voice-result-groups':
+                  assert manifest_schema == '1.0', f'{resource_path}: voice-result-groups allowed only in v1 manifest'
+                  assert 'resultOrder' in resource['data'], f'{resource_path}: Missing resultOrder in data'
+                  assert 'groups' in resource['data'], f'{resource_path}: Missing groups in data'
+                  assert isinstance(resource['data']['resultOrder'], list), f'{resource_path}: resultOrder must be array'
+                  assert isinstance(resource['data']['groups'], dict), f'{resource_path}: groups must be object'
+                elif resource_type == 'selectors':
+                  assert 'stepContainer' in resource['data'], f'{resource_path}: Missing stepContainer in data'
+                  assert 'stepItem' in resource['data'], f'{resource_path}: Missing stepItem in data'
+                elif resource_type == 'thresholds':
+                  assert isinstance(resource['data'], dict), f'{resource_path}: thresholds data must be object'
+                else:
+                  raise AssertionError(f'{resource_path}: Unsupported resource type {resource_type}')
             print(f'✓ All resource files have valid schema')
           except Exception as e:
             print(f'✗ Resource schema validation failed: {e}')
@@ -113,24 +130,25 @@ jobs:
           import sys
           from pathlib import Path
           try:
-            with open('manifest.json') as f:
-              manifest = json.load(f)
-            for entry in manifest['files']:
-              resource_path = entry['url'].replace('./', '')
-              # Read resource file and compute checksum of canonical data payload
-              with open(resource_path) as f:
-                resource = json.load(f)
+            for manifest_path in ['manifest.json', 'manifest.v2.json']:
+              with open(manifest_path) as f:
+                manifest = json.load(f)
+              for entry in manifest['files']:
+                resource_path = entry['url'].replace('./', '')
+                # Read resource file and compute checksum of canonical data payload
+                with open(resource_path) as f:
+                  resource = json.load(f)
 
-              # Compute checksum same way as generators do:
-              # hash of JSON dumps(data, ensure_ascii=False, separators=(',', ':'))
-              data_json = json.dumps(resource['data'], ensure_ascii=False, separators=(',', ':'))
-              computed = hashlib.sha256(data_json.encode('utf-8')).hexdigest()
-              expected = entry['checksum'].replace('sha256:', '')
-              if computed != expected:
-                print(f'✗ Checksum mismatch for {resource_path}')
-                print(f'  Expected: sha256:{expected}')
-                print(f'  Computed: sha256:{computed}')
-                sys.exit(1)
+                # Compute checksum same way as generators do:
+                # hash of JSON dumps(data, ensure_ascii=False, separators=(',', ':'))
+                data_json = json.dumps(resource['data'], ensure_ascii=False, separators=(',', ':'))
+                computed = hashlib.sha256(data_json.encode('utf-8')).hexdigest()
+                expected = entry['checksum'].replace('sha256:', '')
+                if computed != expected:
+                  print(f'✗ Checksum mismatch for {resource_path} ({manifest_path})')
+                  print(f'  Expected: sha256:{expected}')
+                  print(f'  Computed: sha256:{computed}')
+                  sys.exit(1)
             print('✓ All checksums verified')
           except Exception as e:
             print(f'✗ Checksum verification failed: {e}')
@@ -164,7 +182,7 @@ jobs:
           echo "✅ All phrase validations passed"
           echo ""
           echo "Validated:"
-          echo "  • manifest.json structure"
+          echo "  • manifest.json (v1) and manifest.v2.json (v2) structure"
           echo "  • All resource files exist"
           echo "  • Resource file schemas"
           echo "  • SHA-256 checksums"
