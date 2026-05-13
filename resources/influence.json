@@ -33,30 +33,6 @@
         "result": "ANTI"
       },
       {
-        "pattern": "неловко отскакивая от вражеского удара, .* по.мал.* молнию, предназначавшуюся противнику",
-        "result": "ANTI"
-      },
-      {
-        "pattern": "awkwardly bouncing from the enemy's attack, .* caught a lightning bolt intended for .* rival",
-        "result": "ANTI"
-      },
-      {
-        "pattern": "unfortunately, the weapon acted as a conductor and .* received a lightning bolt meant for .*",
-        "result": "ANTI"
-      },
-      {
-        "pattern": "неожиданно почувствовал.* себя лучше.*проклинает метк.* хозя.*",
-        "result": "ANTI"
-      },
-      {
-        "pattern": "неожиданно почувствовал.* себя лучше.* смиренно возносит хвалу небесам за ниспосланное испытание",
-        "result": "ANTI"
-      },
-      {
-        "pattern": ".* suddenly felt better. .* muttered mean things about .* imprecise .*",
-        "result": "ANTI"
-      },
-      {
         "pattern": ".* бьётся о крайне жёсткое излучение, источником которого выступает .*",
         "result": "ATTACK"
       },
@@ -349,150 +325,10 @@
         "result": "ATTACK"
       },
       {
-        "pattern": "вспышка, удар, грохот, запах палёного. герои терпеливо ждут, пока им заменят рефери",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "внезапно на трибунах раздаётся электрический треск и они начинают доверху заполняться попкорном",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "досталась мирно пасущемуся неподал.ку",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "исполняет зажигательный танец с саблями",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "ринул.* искать огнетушитель",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": ".* received a book of castable curses from the heavens, but couldn't read the handwriting",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "a peal of thunder distracted the fighters. it seems like it was .* doing",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "sent a lightning bolt sizzling down onto a nearby pasture",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "the sky lit up, and there was a deafening thunderclap. no flash photography.*",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "удар, ещё удар... апоплексический удар у обоих соперников",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "метящий в .* метеорит в последний момент отклонился от курса и задел обоих соперников сразу",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "молния, ударившая в землю, превращает песок в стекло",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "испуганно принюхиваясь к запаху жжёных тряпок, противники пытаются взобраться на голову друг другу",
-        "result": "ATTACK"
-      },
-      {
         "pattern": "a meteorite flying at .* deviated from its course at the last moment and hit both opponents at once",
         "result": "ATTACK"
       },
       {
-        "pattern": "thunderous clouds rolled in, and acid rained down from the heavens, injuring both competitors",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "a plague of locusts swarmed into the battlefield and descended upon both opponents, who fought them off only after sustaining considerable damage",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "неловко отскакивая от вражеского удара, .* по.мал.* молнию, предназначавшуюся противнику",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "awkwardly bouncing from the enemy's attack, .* caught a lightning bolt intended for .* rival",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "unfortunately, the weapon acted as a conductor and .* received a lightning bolt meant for .*",
-        "result": "ATTACK"
-      },
-      {
-        "pattern": "неземная благодать снизошла вдруг на арену",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "достаёт из ранца смятую незабудку, расправляет",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "яркая радуга возникла над полем боя",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "c неба послышался явственный скрежет зубов",
-        "result": "HEAL"
-      },
-      {
-        "pattern": ".* was showered with healing water. unfortunately, it only works if consumed",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "a beam of healing light showered the audience. the audience complained about the excessive use of bright lighting on the battlefield",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "a bright rainbow appeared on the battlefield. beautiful",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "An inspiring anthem plays from heaven, cheering .* on. Impressive, but not exactly useful",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "the fighters were nonplussed when the sky opened with a crack and a doctor dropped, unconscious, at .* feet",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "совсем на чуть-чуть разворачивает ход времени, восстанавливая всем немного здоровья",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "а потому вылечил.* обоих героев, а заодно судей, комментаторов, зрителей и случайно залетевшую на арену птичку",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "пролившийся внезапно с небес поток живой воды вылечил обоих соперников",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "torrential rain converted the battlefield into a rejuvenating mudbath. the fighters resume the battle feeling refreshed",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "a sudden shower of healing water from heaven cured both competitors",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "неожиданно почувствовал.* себя лучше.*проклинает метк.* хозя.*",
-        "result": "HEAL"
-      },
-      {
-        "pattern": "неожиданно почувствовал.* себя лучше.* смиренно возносит хвалу небесам за ниспосланное испытание",
-        "result": "HEAL"
-      },
-      {
-        "pattern": ".* suddenly felt better. .* muttered mean things about .* imprecise .*",
-        "result": "HEAL"
-      },
-      {
         "pattern": "неземная благодать снизошла вдруг на арену",
         "result": "EMPTY"
       },
@@ -526,10 +362,6 @@
       },
       {
         "pattern": "the fighters were nonplussed when the sky opened with a crack and a doctor dropped, unconscious, at .* feet",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "вспышка, удар, грохот, запах палёного. герои терпеливо ждут, пока им заменят рефери",
         "result": "EMPTY"
       },
       {
@@ -566,74 +398,6 @@
       },
       {
         "pattern": "вспышка, удар, грохот, запах палёного. герои терпеливо ждут, пока им заменят рефери",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "внезапно на трибунах раздаётся электрический треск и они начинают доверху заполняться попкорном",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "досталась мирно пасущемуся неподал.ку",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "исполняет зажигательный танец с саблями",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "ринул.* искать огнетушитель",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": ".* received a book of castable curses from the heavens, but couldn't read the handwriting",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "a peal of thunder distracted the fighters. it seems like it was .* doing",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "sent a lightning bolt sizzling down onto a nearby pasture",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "the sky lit up, and there was a deafening thunderclap. no flash photography.*",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "неземная благодать снизошла вдруг на арену",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "достаёт из ранца смятую незабудку, расправляет",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "яркая радуга возникла над полем боя",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "c неба послышался явственный скрежет зубов",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": ".* was showered with healing water. unfortunately, it only works if consumed",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "a beam of healing light showered the audience. the audience complained about the excessive use of bright lighting on the battlefield",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "a bright rainbow appeared on the battlefield. beautiful",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "An inspiring anthem plays from heaven, cheering .* on. Impressive, but not exactly useful",
-        "result": "EMPTY"
-      },
-      {
-        "pattern": "the fighters were nonplussed when the sky opened with a crack and a doctor dropped, unconscious, at .* feet",
         "result": "EMPTY"
       },
       {
@@ -825,63 +589,11 @@
         "result": "MUTUAL"
       },
       {
-        "pattern": "a meteorite flying at .* deviated from its course at the last moment and hit both opponents at once",
-        "result": "MUTUAL"
-      },
-      {
         "pattern": "thunderous clouds rolled in, and acid rained down from the heavens, injuring both competitors",
         "result": "MUTUAL"
       },
       {
         "pattern": "a plague of locusts swarmed into the battlefield and descended upon both opponents, who fought them off only after sustaining considerable damage",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "удар, ещё удар... апоплексический удар у обоих соперников",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "метящий в .* метеорит в последний момент отклонился от курса и задел обоих соперников сразу",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "молния, ударившая в землю, превращает песок в стекло",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "испуганно принюхиваясь к запаху жжёных тряпок, противники пытаются взобраться на голову друг другу",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "a meteorite flying at .* deviated from its course at the last moment and hit both opponents at once",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "thunderous clouds rolled in, and acid rained down from the heavens, injuring both competitors",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "a plague of locusts swarmed into the battlefield and descended upon both opponents, who fought them off only after sustaining considerable damage",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "совсем на чуть-чуть разворачивает ход времени, восстанавливая всем немного здоровья",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "а потому вылечил.* обоих героев, а заодно судей, комментаторов, зрителей и случайно залетевшую на арену птичку",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "пролившийся внезапно с небес поток живой воды вылечил обоих соперников",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "torrential rain converted the battlefield into a rejuvenating mudbath. the fighters resume the battle feeling refreshed",
-        "result": "MUTUAL"
-      },
-      {
-        "pattern": "a sudden shower of healing water from heaven cured both competitors",
         "result": "MUTUAL"
       }
     ]
