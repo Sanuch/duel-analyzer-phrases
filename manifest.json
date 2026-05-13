@@ -1,41 +1,34 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-05-13T11:22:15.877948+00:00",
+  "updatedAt": "2026-05-13T19:55:32.396344+00:00",
   "files": [
     {
       "lang": "ru",
       "type": "voice",
-      "dataVersion": "2026-05-12",
-      "checksum": "sha256:3668fe0dd4b11b73fad9a6c8b88f3f210ac7fbc0f3e14d3219edb515144d5ba1",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:4d1a07ab137b5f44aec8845c7fbeeb246db877dd37cf3f78f39e5620497c3ea7",
       "url": "./resources/voice.json"
     },
     {
       "lang": "ru",
       "type": "influence",
-      "dataVersion": "2026-05-12",
-      "checksum": "sha256:96981e2b4dba882084377704da51fc64b5541f844005a252462a8d2a0428d4fe",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:7c474b762aad2c2a426ca982c414cab95f0ee6b5ba042a36049889196d156e31",
       "url": "./resources/influence.json"
     },
     {
       "lang": "ru",
       "type": "miracle",
-      "dataVersion": "2026-05-12",
-      "checksum": "sha256:0e17159f0c4c74a4b7da2f2173605d9ffce14bf11fc3bbaf8cced5692cfda15a",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:d403bf7f717fe758bfb0a1ffbc30af326c1fc69d20e834c5aec7cb10bf38ef7e",
       "url": "./resources/miracle.json"
     },
     {
       "lang": "ru",
       "type": "conditions",
-      "dataVersion": "2026-05-12",
-      "checksum": "sha256:3c025256bba93f6b8601c91072310eebf24e521beae5171145c2ac15ab014317",
-      "url": "./resources/conditions.json"
-    },
-    {
-      "lang": "ru",
-      "type": "voice-result-groups",
       "dataVersion": "2026-05-13",
-      "checksum": "sha256:8f1e5c6b076f26ac5f02ff88ff474e884ae136da2aa4123d0a25b0713ae5eba8",
-      "url": "./resources/voice-result-groups.json"
+      "checksum": "sha256:7be53b31c43787bfc84f262cfefcb8367d2bf4d8a6f7c33d59af45abbd0fba55",
+      "url": "./resources/conditions.json"
     }
   ]
 }

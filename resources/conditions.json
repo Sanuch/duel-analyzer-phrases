@@ -1,35 +1,101 @@
 {
-  "schemaVersion": "1.0",
-  "dataVersion": "2026-05-12",
-  "checksum": "sha256:3c025256bba93f6b8601c91072310eebf24e521beae5171145c2ac15ab014317",
+  "schemaVersion": "2.0",
+  "dataVersion": "2026-05-13",
+  "checksum": "sha256:7be53b31c43787bfc84f262cfefcb8367d2bf4d8a6f7c33d59af45abbd0fba55",
   "meta": {
     "lang": "ru",
     "type": "conditions"
   },
   "data": {
     "patterns": [
-      "вопли зрителей",
-      "able to hear their gods",
-      "ходить вместе",
-      "fight will be twice as fast as usual",
-      "антибожественный купол",
-      "more likely to backfire than usual",
-      "озверевшие белки",
-      "lose some health points",
-      "односторонних влияний двумя",
-      "influences limit to 2",
-      "распаковать больше трех",
-      "more than 3 charges",
-      "намаливать богам",
-      "restore some godpower",
-      "три золотых кирпича",
-      "два кирпича",
-      "three gold bricks",
-      "полезный ресурс",
-      "log of gopher wood",
-      "get a log for their ark",
-      "дополнительный призовой фонд",
-      "extra gold prize"
+      {
+        "pattern": "вопли зрителей",
+        "result": "DEAFENING"
+      },
+      {
+        "pattern": "able to hear their gods",
+        "result": "DEAFENING"
+      },
+      {
+        "pattern": "ходить вместе",
+        "result": "TOGETHER"
+      },
+      {
+        "pattern": "fight will be twice as fast as usual",
+        "result": "TOGETHER"
+      },
+      {
+        "pattern": "антибожественный купол",
+        "result": "ANTIDOME"
+      },
+      {
+        "pattern": "more likely to backfire than usual",
+        "result": "ANTIDOME"
+      },
+      {
+        "pattern": "озверевшие белки",
+        "result": "CRAZY_SQUIRRELS"
+      },
+      {
+        "pattern": "lose some health points",
+        "result": "CRAZY_SQUIRRELS"
+      },
+      {
+        "pattern": "односторонних влияний двумя",
+        "result": "LIMIT_INFLUENCE"
+      },
+      {
+        "pattern": "influences limit to 2",
+        "result": "LIMIT_INFLUENCE"
+      },
+      {
+        "pattern": "распаковать больше трех",
+        "result": "LIMIT_UNPACK"
+      },
+      {
+        "pattern": "more than 3 charges",
+        "result": "LIMIT_UNPACK"
+      },
+      {
+        "pattern": "намаливать богам",
+        "result": "PRAYING"
+      },
+      {
+        "pattern": "restore some godpower",
+        "result": "PRAYING"
+      },
+      {
+        "pattern": "три золотых кирпича",
+        "result": "BRICKS"
+      },
+      {
+        "pattern": "два кирпича",
+        "result": "BRICKS"
+      },
+      {
+        "pattern": "three gold bricks",
+        "result": "BRICKS"
+      },
+      {
+        "pattern": "полезный ресурс",
+        "result": "RESOURCE"
+      },
+      {
+        "pattern": "log of gopher wood",
+        "result": "RESOURCE"
+      },
+      {
+        "pattern": "get a log for their ark",
+        "result": "RESOURCE"
+      },
+      {
+        "pattern": "дополнительный призовой фонд",
+        "result": "EXTRA_GOLD"
+      },
+      {
+        "pattern": "extra gold prize",
+        "result": "EXTRA_GOLD"
+      }
     ]
   }
 }
