@@ -6,28 +6,28 @@
       "lang": "ru",
       "type": "voice",
       "dataVersion": "2026-05-13",
-      "checksum": "sha256:b21deb0051b2e6114eebeb24d90804970399d0dd5f48d20bf7a71b9964bc7933",
+      "checksum": "sha256:4d1a07ab137b5f44aec8845c7fbeeb246db877dd37cf3f78f39e5620497c3ea7",
       "url": "./resources/voice.json"
     },
     {
       "lang": "ru",
       "type": "influence",
       "dataVersion": "2026-05-13",
-      "checksum": "sha256:f11a543319658cb2440e9919aba4fab0e710924ff2cd68ffcb0dfc196d2253df",
+      "checksum": "sha256:056c7b32f75e97f1e64cb36c5550994ed28bd4bd87c16ca4dfe4e571620def85",
       "url": "./resources/influence.json"
     },
     {
       "lang": "ru",
       "type": "miracle",
       "dataVersion": "2026-05-13",
-      "checksum": "sha256:e26c2170078b5999f5223d175c2edd9d399827d834decfe557a6104202a34d84",
+      "checksum": "sha256:d403bf7f717fe758bfb0a1ffbc30af326c1fc69d20e834c5aec7cb10bf38ef7e",
       "url": "./resources/miracle.json"
     },
     {
       "lang": "ru",
       "type": "conditions",
       "dataVersion": "2026-05-13",
-      "checksum": "sha256:47d1f107d46dc2679f1ca12cad76fda4771007eaf7c4cb5ed6b2b873f2bc0031",
+      "checksum": "sha256:7be53b31c43787bfc84f262cfefcb8367d2bf4d8a6f7c33d59af45abbd0fba55",
       "url": "./resources/conditions.json"
     }
   ]
