@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-05-12T16:26:37.528773+00:00",
+  "updatedAt": "2026-05-13T10:33:02.661056+00:00",
   "files": [
     {
       "lang": "ru",
@@ -29,6 +29,13 @@
       "dataVersion": "2026-05-12",
       "checksum": "sha256:3c025256bba93f6b8601c91072310eebf24e521beae5171145c2ac15ab014317",
       "url": "./resources/conditions.json"
+    },
+    {
+      "lang": "ru",
+      "type": "voice-result-groups",
+      "dataVersion": "2026-05-13",
+      "checksum": "sha256:8f1e5c6b076f26ac5f02ff88ff474e884ae136da2aa4123d0a25b0713ae5eba8",
+      "url": "./resources/voice-result-groups.json"
     }
   ]
 }
