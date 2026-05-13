@@ -67,6 +67,7 @@ jobs:
           python -c "
           import json
           import sys
+          PATTERN_TYPES = {'voice', 'influence', 'miracle', 'conditions'}
           from pathlib import Path
           try:
             with open('manifest.json') as f:
@@ -75,14 +76,29 @@ jobs:
               resource_path = entry['url'].replace('./', '')
               with open(resource_path) as f:
                 resource = json.load(f)
+              resource_type = entry.get('type')
               # Validate resource structure
               assert 'schemaVersion' in resource, f'{resource_path}: Missing schemaVersion'
               assert 'dataVersion' in resource, f'{resource_path}: Missing dataVersion'
               assert 'checksum' in resource, f'{resource_path}: Missing checksum'
               assert 'meta' in resource, f'{resource_path}: Missing meta'
               assert 'data' in resource, f'{resource_path}: Missing data'
-              assert 'patterns' in resource['data'], f'{resource_path}: Missing patterns in data'
-              assert isinstance(resource['data']['patterns'], list), f'{resource_path}: patterns must be array'
+
+              if resource_type in PATTERN_TYPES:
+                assert 'patterns' in resource['data'], f'{resource_path}: Missing patterns in data'
+                assert isinstance(resource['data']['patterns'], list), f'{resource_path}: patterns must be array'
+              elif resource_type == 'voice-result-groups':
+                assert 'resultOrder' in resource['data'], f'{resource_path}: Missing resultOrder in data'
+                assert 'groups' in resource['data'], f'{resource_path}: Missing groups in data'
+                assert isinstance(resource['data']['resultOrder'], list), f'{resource_path}: resultOrder must be array'
+                assert isinstance(resource['data']['groups'], dict), f'{resource_path}: groups must be object'
+              elif resource_type == 'selectors':
+                assert 'stepContainer' in resource['data'], f'{resource_path}: Missing stepContainer in data'
+                assert 'stepItem' in resource['data'], f'{resource_path}: Missing stepItem in data'
+              elif resource_type == 'thresholds':
+                assert isinstance(resource['data'], dict), f'{resource_path}: thresholds data must be object'
+              else:
+                raise AssertionError(f'{resource_path}: Unsupported resource type {resource_type}')
             print(f'✓ All resource files have valid schema')
           except Exception as e:
             print(f'✗ Resource schema validation failed: {e}')
@@ -101,12 +117,13 @@ jobs:
               manifest = json.load(f)
             for entry in manifest['files']:
               resource_path = entry['url'].replace('./', '')
-              # Read resource file and compute checksum of data payload
+              # Read resource file and compute checksum of canonical data payload
               with open(resource_path) as f:
                 resource = json.load(f)
-              # Compute checksum same way as generate_phrases.py does:
-              # hash of JSON dumps with ensure_ascii=False and compact separators
-              data_json = json.dumps({'patterns': resource['data']['patterns']}, ensure_ascii=False, separators=(',', ':'))
+
+              # Compute checksum same way as generators do:
+              # hash of JSON dumps(data, ensure_ascii=False, separators=(',', ':'))
+              data_json = json.dumps(resource['data'], ensure_ascii=False, separators=(',', ':'))
               computed = hashlib.sha256(data_json.encode('utf-8')).hexdigest()
               expected = entry['checksum'].replace('sha256:', '')
               if computed != expected:
