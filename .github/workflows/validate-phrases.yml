@@ -77,7 +77,7 @@ jobs:
           python -c "
           import json
           import sys
-          PATTERN_TYPES = {'voice', 'influence', 'miracle', 'conditions'}
+          PATTERN_TYPES = {'voice', 'influence', 'miracle', 'conditions', 'emptyStep'}
           from pathlib import Path
           try:
             for manifest_path in ['manifest.json', 'manifest.v2.json']:
