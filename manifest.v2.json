@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "updatedAt": "2026-05-13T20:36:21.547717+00:00",
+  "updatedAt": "2026-10-16T12:29:31.995464+00:00",
   "files": [
     {
       "lang": "ru",
@@ -29,6 +29,13 @@
       "dataVersion": "2026-05-13",
       "checksum": "sha256:7be53b31c43787bfc84f262cfefcb8367d2bf4d8a6f7c33d59af45abbd0fba55",
       "url": "./resources/conditions.json"
+    },
+    {
+      "lang": "ru",
+      "type": "emptyStep",
+      "dataVersion": "2026-10-16",
+      "checksum": "sha256:fe8eeb7dbcd495be758e51ceabec2b4a337eaf25308d20c2608923880618424a",
+      "url": "./resources/emptyStep.json"
     }
   ]
 }

@@ -1,0 +1,833 @@
+{
+  "schemaVersion": "2.0",
+  "dataVersion": "2026-10-16",
+  "checksum": "sha256:fe8eeb7dbcd495be758e51ceabec2b4a337eaf25308d20c2608923880618424a",
+  "meta": {
+    "lang": "ru",
+    "type": "emptyStep"
+  },
+  "data": {
+    "patterns": [
+      {
+        "pattern": ".* оперативно организовал на трибуне тотализатор. Актуальные ставки",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* передал.* ноту протеста. .* изобразил.* гамму чувств. Судья объявил музыкальную паузу",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* показательно кусает себя за локоть. .* пытается укусить себя за лопатку. Белки падают с деревьев с вывихом шеи",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* предлагает бо. на шпагах или пистолетах. .* осведомляется, можно ли ограничиться драко. подушками",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* сделал.* знак фанатам на трибуне, и .* неловко отпрыгивает от летящих помидоров",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* сегодня выглядит не лучшим образом. В .* сторону с трибун летят помидоры",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* сегодня так прекрас.*, что присутствующие на трибунах .* забросали е.+ цветами",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* смачно похрустел.* костями, размял.* конечности и направил.* к противнику. В воздухе витает напряжение",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* сосредоточенно наносят удар за ударом, но в конце концов утомляются и оставляют всхлипывающего судью в покое",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* так красноречиво описывает сво. предстоящи. удар, что судья объявляет та.маут и просит нервных и женщин временно удалиться с трибун",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* увеличивает силу атаки, но .* не ослабляет сопротивления. Напряжение на трибунах раст.т",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "А пока герои восстанавливают дыхание, комментаторы рекламируют новые шлемы, сапоги и кирасы",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Администратор Годвилля, просматривающи. лог этого боя в будущем, ставит его на паузу, чтобы подлить себе чая",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Антракт. Зрителям разносят прохладительные напитки, боги проводят инструктаж своих героев. Группа поддержки исполняет на арене зажигательны. танец",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Ах, какие удары — просто загляденье. А какие блоки — да это шедевры. А увороты — вот у кого можно поучиться. Да, давненько мы не видели тако. зрелищно. драки. Но отвлечемся от трибун и посмотрим, что же у нас происходит на поле",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Болельщики отсчитывают секунды до следующего хода и, затаив дыхание, следят за ползуще. вправо полоско.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Букмекеры начинают принимать ставки на драку, развязавшуюся на трибунах между командами геро.ских фанатов",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "В разгар боя, под восторженны. р.в трибун, на поле выбежал совершенно голы. .* с плакатом .* — чемпион",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Внезапно .* и .* со звоном скрещиваются, испуская снопы разноцветных искр. Публика ликует",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Внезапно в небе что-то громыхнуло, промелькнула радуга, полыхнула зарница... Герои почуяли неладное и решили ускорить сражение",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Внезапно небо затягивается тяж.лыми тучами, трибуны покрываются зябким туманом, вспыхивают софиты, и арена переходит в ночной режим",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Внезапно продавец .* на трибуне заорал, показывая пальцем на арену",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Внезапны. раскат грома заставил героев .*. К счастью, бывают и просто грозы",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Воспользовавшись перерывом в сражении, на арену выбегает гробовщик и деловито снимает с участников мерки, заодно раздавая визитки",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Герои в очереди начали было возмущаться затянутости боя, но вспомнив, что там сражается .*, благоразумно притихли",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Герои взяли паузу и показали любопытным зевакам, как опасно мешать дерущимся. Свободного места на арене значительно прибавилось",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Герои ненадолго прервали сражение, чтобы принести судью в жертву своим богам",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Герои понимающе переглянулись, разбежались подальше и быстренько помолились своим богам",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Главное в это. схватке не победа. Хотя нет, главное",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Глядя, какие могучие удары отвешивают друг другу бо.цы, низкоуровневы. геро.-болельщик в приступе зависти жу.т трофе.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Гром, фонтан пара, осколки камне. и громогласны. хохот в наступивше. тишине... Бог какого-то героя развлекается на трибунах",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Детишки неподал.ку решили, что, когда вырастут, станут как .* и .*, и тут же начали драку. Пришлось разнимать",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Для пущего драматизма на арену выпускают львов, и герои, матерясь на организаторов, кое-как уничтожают помеху",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Дуэль затянулась. Зрители на трибунах просят закрыть арену — их всех тошнит.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Еноты болеют против белок и их избранника",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Еноты болеют. Белки тоже болеют. На трибунах мелькают белые халаты ветеринаров",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Запутавшись, чья се.час очередь бить, герои синхронно дубасят друг друга",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Земля дрожит, треск косте. заглушает нечеловеческие вопли, кровь ль.тся реко.... .* и .* молча наблюдают за драко. фанатов",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зрители аплодируют, аплодируют, аплодируют. Кончили аплодировать",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зрители на трибунах требуют повторить последни. момент боя замедленно и в обратном порядке",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зрители невольно задаются вопросом — а во имя чего они на вс. это смотрят",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зрители рукоплещут и забрасывают арену цветами. Герои раскланиваются и продолжают битву",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зритель на трибуне встал поправить штаны и нечаянно пустил волну",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Зубные феи на трибунах готовят мешочки для сбора и деловито разворачивают плакат",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Из кустов высунулся поглазеть на дуэль .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Из очереди героев на арену послышались недовольные крики",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Из свое. ложи высунулся поглазеть на поединок .*. От ужаса и почтения соперники слегка повреждаются в уме",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Какие выпады, прыжки и кувырки, какая техника, какое исполнение. Герои заворож.нно смотрят на споткнувшегося судью",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Какие па. Какие сальто. Зрители на трибунах в экстазе",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Какое блистательное комбо. Хук слева, хук справа, апперкот и удар коленом в пах. Даже .* и .* замерли и заворож.нно наблюдают за драко. на трибунах",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Между недоумевающими соперниками пробегает .* с криком .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На арену вдруг выскочил разъяр.нны. .*. Герои отвлеклись от дуэли и в несколько ударов прикончили монстра, слегка пострадав при этом",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На арену внезапно выскочил .* и с воплем .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На арену врывается странны. геро. помятого вида, но охрана вовремя пресекает его попытки предложить дуэлянтам побыть третьим",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На арену выскакивает .* с плакатом",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На трибунах группа барсуков-мракобесов пытается развернуть транспарант",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На трибунах небольшая потасовка болельщиков переросла в массовое побоище",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На трибунах показался владелец мыловаренного завода. Судья заметно нервничает",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На трибунах предлагают на выбор напитки со вкусом сладости победы и горечи поражения",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "На трибунах разгорелся нешуточны. спор между болельщиками, поставившими на то, что выиграет .*, и фанатами, сделавшими ставки на то, что проиграет .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Наблюдая за перепалко. соперников, судья неспешно тасует колоду ж.лтых карточек",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Наблюдая захватывающи. поединок, судья задремал, чем пользуются герои: один разминает зат.кшую ногу, а друго. пытается незаметно долить себе зел.нки в полоску жизни",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Народ на трибунах безмолвствует вс. громче",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Начавши.ся дождик слегка охладил пыл героев, а .*, кажется, заработал.* насморк",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Не выдержав накала страсте. на арене, один из зрителе. упал в обморок",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Не дожидаясь окончания боя, зрители на трибунах открывают шампанское. .* и .* с трудом уворачиваются от летящих в них пробок",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Не успела закончиться одна минута поединка, как началась другая",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Недовольные затянувшимся боем зрители на трибунах выказывают дуэлянтам холодное презрение. Соперники м.рзнут и требуют выдать пледы",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Недовольны. течением поединка престарелы. фанат размахивает факелами и скандирует",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Некто, похожи. на Администратора Годвилля, отозвал одного из противников в сторону и предложил проиграть бо. за пару почти настоящих золотых кирпиче.. .* с негодованием отказывается",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Неожиданное солнечное затмение заставило противников задуматься о вечности и помолиться своим богам",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Окрестные белки считают, что победит .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Окрестные дятлы считают, что победит тот, у кого больше денег",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "От избытка чувств один из комментаторов сражения вывалился из будки. Поко.ся с миром, коллега...",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Пасши.ся неподал.ку .* вдруг взбеленился и прон.сся между соперниками, отдавливая ноги",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "По полю прош.лся .*, неся над голово. табличку с номером следующего раунда. Зрители негодуют: до этого на арену выходили красивые девушки в бикини.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Под лузгание семечек разговоры на трибунах переходят на политику и баб. Вяло обменивающиеся плюхами герои слабо забавляют народ",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Подбросив ромашку и разорвав монетку, соперники так и не поняли, че. се.час ход",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Пользуясь тем, что судья отвернулся, противники принимают по рюмочке допинга",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Представители общества защиты редких монстров скандируют на трибунах",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Присутствующи. на поединке мабритански. учены. пытается вычислить, значение какого из дуэлянтов стремится к нулю",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Пробегавши. мимо геро. поставил монетку на то, что победит .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Противники кровожадно поглядывают на уши друг друга",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Противники напряглись, и в воздухе запахло сенсацие.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Противники устали бить по очереди и решают вс.-таки раздать фанатам автографы",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Проходившие мимо босяки остановились посмотреть на потасовку",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Разгоряч.нные боем зрители скандируют",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Раздались пыльные аплодисменты и крик .*, плавно переходящи. в зевок",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Репорт.р газеты .* насто.чиво просит героев замереть на пару часов для снимка на камеру-обскуру",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Решив немного передохнуть от тяж.лых физических нагрузок, соперники присели на песок и вознесли краткую молитву",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "С глухим стуком .* ударяются друг о друга. Суровая ид.т битва",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "С криком .* судья пытается покинуть арену",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "С трибун слышен богатырски. храп. Кажется, зрителе. не очень волнует поединок",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Соперники обменялись рукопожатиями, деньгами, трофеями, взглядами на жизнь, но вредны. судья расставил все по своим местам и вынес по предупреждению",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Старушки на скаме.ках требуют прекратить драку и угрожают вызвать полицию",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Стая белок не смогла определиться, за кого е. болеть, и отбежала в сторону получить инструкции у како.-то красавицы",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Стервятники поднялись в небо и кружат над героями. Интересно, за кого они болеют",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судья дает свисток, и .* бегут наперегонки на противоположный конец арены. .* оказывается быстрее и получает в подарок рулон бинтов",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судья объявил перерыв, чтобы пересмотреть самые зрелищные моменты поединка в замедленном исполнении приглаш.нных акт.ров",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судья объявляет минутны. перерыв. Пользуясь случаем, герои поспешно поправляют здоровье",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судья произносит .* Герои стремительно бегут к барьеру арены и прячутся за него. Похоже, дуэль затягивается",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судья просит противников бить по правилам, а не по нему",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Судя по реакции трибун, там болеют за судью",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Торговец на трибунах предлагает зрителям памятные значки .* и .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Трибуны взревели. Организаторы довольны: шутка с канцелярскими кнопками удалась",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Тьма сгустилась над арено.. В небе столкнулись громовые тучи покровителе. озлобленных бо.цов",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Убегая от соперника, .* спотыкается о нулево. столб и проклинает архитекторов, разместивших его строго в центре арены",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Удар, ещ. удар, удар-удар. С каждо. секундо. пульс противников учащается",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Удар, удар, ещ. удар. Опять удар. И вс. мимо",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Фотограф просит героев подпрыгнуть и зависнуть в воздухе для впечатляющего снимка на первую полосу газеты",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Через арену прошествовала уборщица с ведром, ругаясь под нос на топчущих поч.м зря",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Шквал аплодисментов, обрушивши.ся с трибун, нан.с немалы. урон обоим противникам",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Шустры. хор.к прямо посреди боя влез к одному из противников за пазуху и стащил .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* and .* are hiding from each other behind the same rock",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* and .* wonder why the audience is cheering the names of the contestants for the upcoming duel",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* announced that .* has no hope, .* responded that .* doesn't have a prayer. The duelers just skip this round",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* doesn't look good today. Lots of tomatoes have been flying at .* from the stands",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* fights like a dairy farmer, which is appropriate since .* fights like a cow",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* grazing not far away from the arena suddenly went mad and rushed between the opponents, treading on their feet",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* leaned out of the bushes to gawk at the fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* looks so gorgeous today that the gentlemen in the stands are showering her with flowers",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* looks so handsome today that the ladies in the stands are showering him with flowers",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* made a secret sign to the spectators in the stands, and within moments, .* was dodging a volley of rotten tomatoes",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* quickly started taking bets. Latest odds",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* reporter insisted on making the heroes stand still for a few hours for a camera obscura shot",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": ".* strode together to the center of the arena, saluted the crowd, and offered prayers to their gods before going back to fighting each other",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A buffering bar suddenly appeared above the opponents' heads. They took the chance to eat some snacks.",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A commercial break allows both heroes to take a short rest",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A dray of squirrels could not decide who to support and ran to the side to get instructions from a strange looking fellow",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A fast running polecat quickly sprung into the opponent's bosom and snatched .*",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A fight broke out in the stands between members of the audience. .* and .* paused in the middle of their own battle to watch the action and pick up some fighting tips",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A hungry .* ate three whole trays of hotdogs, causing a riot in the stands",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A nearby tomato merchant suddenly offers a two-for-one sale on vine ripened tomatoes",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A passing hero took one look at the fight and bet a coin on an? .* to win",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A series of failed backflips, kicks and jumps proved that the heroes are, sadly, lacking in ninja skills",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A small scuffle amongst the .* is threatening to turn this duel into a massacre",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A spectator in the stands stood up to fix his pants and accidentally started a wave",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A sudden clap of thunder forced both heroes to duck and cover with their ears. Luckily, sometimes it's just a thunderstorm",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A sudden shower of rain slightly cooled the heroes' tempers. It seems that .* is about to catch a cold",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A vendor in the stands was shouting, .* and .* couldn't resist and took a timeout to have a drink",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "A wave comes from the crowd, hitting both heroes making them a little salty",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "All combatants ran for cover, thinking it was the other's turn to attack",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "An enraged cultist summoned an evil demon into the arena. The heroes joined forces and quickly vanquished the entity",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "As the two heroes battled for glory, honor and victory, a fake judge tried to sneak away with some of the prize money",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Becoming restless, the crowd lobs peanuts at the duelists, further distracting them from the fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both .* and .* scrambled up the arena walls when a careless janitor bumped the .* switch usually reserved for naval re-enactments",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both duelists begin to yell at each other, calling the opponent's previous move a foul",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both heroes are paralyzed by the threat of mutually assured destruction",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both heroes fix themselves up before letting the .* journalist snap a picture",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both heroes take a brief pause from fighting to pose in some staged fight pictures for .* monthly magazine",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both heroes took a moment to write in their diaries about how the fight was going",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Both of the opponents strained themselves. There was something in the air",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Commentators remind the audience to fill out the customer satisfaction survey before leaving",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Dissatisfied shouts from other heroes queueing to enter the arena interrupted the fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Distracted by the nail-biting suspense of the fight, the popcorn vendor tripped and tumbled down the arena stands. Free popcorn for the audience",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "During the commercial interruption, a squad of salesmen took the field advertising their shiny products",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Excited spectators are chanting",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Heroes waiting in the queue were complaining over the too long-drawn fight lasting too long, when someone remembered that this is a duel with .*. The line fell silent",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Local squirrels think that an? .* that jumped out of the bushes will win this fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Loud snores are coming from the stands. It seems that the audience is not very excited about the fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Neither combatant is quite sure which move to use. Well, this is an awkward situation",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Passing tramps stopped for a moment to watch the brawl",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Representatives of the Rare Mobs Association are chanting from their seats in the stands",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Scantily clad women entered the middle of the arena and started dancing. Both fighters took a break and gave some prayers",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Some people in the audience are shouting that battles are too cruel these days, and demanding that the arena be closed down, because it makes them sick",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Someone resembling a Godville Administrator called one of the fighters to the side and offered a pair of almost genuine golden bricks for throwing the fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly .* clashed against .* with a clang of colorful sparks. The audience rejoiced",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly .* holding a banner reading .* jumped into the arena",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly there was a loud boom in the sky, a rainbow flashed and the sky burst out with summer lightning... Both heroes felt like something was wrong and decided to speed up the battle",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly thunderous crackling resonated in the air. Both competitors offered a prayer to their respective gods, just in case",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly, .* seller pointed his finger at .* and shouted",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Suddenly, an enraged .* jumped into the arena. The heroes paused the duel and finished off the creature with a couple of strikes, incurring light damage in the process",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The battle is temporarily halted to de-blood the field",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The combatants stare at each other and breathe heavily for a few minutes",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The duelists are mistaking the crowd's taunts for cheers",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The fighters are patiently waiting for the audience to replenish their popcorn supplies",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The fighters were interrupted by a terrified stranger running between them, followed by a furious mole in hot pursuit",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The fighters were interrupted by an overzealous hero trying to dig in the middle of the battleground",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The Godville Administrator leaned out of his box to gaze at the fight. The fighters fell to their knees in horror and awe",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes are floating like bees and stinging like butterflies",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes are forced to pause briefly while a mother duck and her ducklings waddle across the arena. The battle continues",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes are kung fu fighting. They are fast as lightning",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes attempted to settle their duel with a game of chess. They managed to checkmate each other simultaneously by the second move, thoroughly confusing both for some brain damage",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes begin circling each other, snapping their fingers in unison to a steady beat",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes decided to have a little rest from the heavy physical exertion, sat down on the sand and offered a short prayer to their gods",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes disagree on whose turn it is to attack and start a free-for-all scuffle, both taking substantial damage",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes face off and draw their weapons... forgetting that this is a duel and not a sketching competition",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes looked at each other knowingly, then ran aside .* quick prayer",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes paused for a moment, staring menacingly at each other, allowing an innocent tumbleweed to safely cross the arena",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes sat down to peacefully talk things over. They discovered they really had quite a lot in common, but the judge ordered them to get on with the fight anyway",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes took a timeout to show the curious onlookers how dangerous interfering with fighters can be. Suddenly, lots of space freed up in the stands",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The heroes took a timeout while a .* resurfaced the arena",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The judge announced a timeout to review the most spectacular moments of the fight in slow motion replay, performed by guest actors",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The judge announces a one minute break. The heroes take the opportunity to quickly restore their health",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The judge whistles a break for tea. .* and .* at each other across the table, neither one willing to admit that the crumpets are exceptionally good today",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The kids playing .* decided that they want(ed)? to be like .* and .* when they grow up and immediately began to fight",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The opponents glared at each other.s ears with bloodlust in their eyes",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The referee blows his whistle for a break and both duelists head to the changing rooms to worship their gods",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The referee paused the duel to get a popcorn refill",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The referee ruled that it would be too dangerous for the combatants to continue the fight in the rain, and called a halt until the usual weather of sunshine and lightning had resumed",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The referee stepped in and separated the fighters on account of trash talking",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "The referees halt the fight to let the janitors spread fresh sawdust",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Tooth fairies spread out their banners in the grandstands, .* and started to prepare their collection bags",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "Unable to deal with the heat of the battle, one of the spectators faints",
+        "result": "EMPTY"
+      },
+      {
+        "pattern": "What a pass. What a somersault. Observers rejoice",
+        "result": "EMPTY"
+      }
+    ]
+  }
+}
